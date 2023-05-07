@@ -46,8 +46,7 @@ const languageLevelToUIText = (lls) =>
 
 const transform = (data) => ({
   id: data.id,
-  first_name: data.first_name,
-  last_name: data.last_name,
+  name: `${data.first_name} ${data.last_name}`,
   comment: data.comment,
   utc_timedelta: data.utc_timedelta,
   availability_slots: availabilitySlotsToUIText(data.availability_slots),
