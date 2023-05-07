@@ -1,0 +1,80 @@
+[
+  {
+    "id": 1,
+    "first_name": "Jesse",
+    "last_name": "Mccormick",
+    "comment": "Around again hold. Once mention north. Child should so political remain. Of sort live enjoy special rather world.",
+    "utc_timedelta": "UTC-03:00",
+    "availability_slots": [
+      {
+        "day_of_week_index": 0,
+        "from_utc_hour": "08:00:00",
+        "to_utc_hour": "11:00:00"
+      },
+      {
+        "day_of_week_index": 1,
+        "from_utc_hour": "05:00:00",
+        "to_utc_hour": "08:00:00"
+      },
+      {
+        "day_of_week_index": 1,
+        "from_utc_hour": "17:00:00",
+        "to_utc_hour": "21:00:00"
+      },
+      {
+        "day_of_week_index": 2,
+        "from_utc_hour": "14:00:00",
+        "to_utc_hour": "17:00:00"
+      },
+      {
+        "day_of_week_index": 2,
+        "from_utc_hour": "17:00:00",
+        "to_utc_hour": "21:00:00"
+      },
+      {
+        "day_of_week_index": 3,
+        "from_utc_hour": "11:00:00",
+        "to_utc_hour": "14:00:00"
+      },
+      {
+        "day_of_week_index": 4,
+        "from_utc_hour": "05:00:00",
+        "to_utc_hour": "08:00:00"
+      },
+      {
+        "day_of_week_index": 4,
+        "from_utc_hour": "14:00:00",
+        "to_utc_hour": "17:00:00"
+      },
+      {
+        "day_of_week_index": 4,
+        "from_utc_hour": "17:00:00",
+        "to_utc_hour": "21:00:00"
+      },
+      {
+        "day_of_week_index": 5,
+        "from_utc_hour": "05:00:00",
+        "to_utc_hour": "08:00:00"
+      },
+      {
+        "day_of_week_index": 6,
+        "from_utc_hour": "11:00:00",
+        "to_utc_hour": "14:00:00"
+      }
+    ],
+    "communication_language_mode": "ru_ua",
+    "age_range": "5-6",
+    "status": "not_attending",
+    "is_member_of_speaking_club": true,
+    "teaching_languages_and_levels": [
+      {
+        "language": "Polish",
+        "level": "A1"
+      },
+      {
+        "language": "Czech",
+        "level": "C1"
+      }
+    ]
+  }
+]

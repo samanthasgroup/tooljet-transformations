@@ -1,0 +1,28 @@
+{
+  "name": "tooljet-transformations",
+  "version": "1.0.0",
+  "description": "A JavaScript project",
+  "main": "./dist/index.js",
+  "type": "module",
+  "scripts": {
+    "format": "prettier --write ./**/*.js",
+    "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "eslint": "^8.40.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-import": "^2.27.5",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.8.8"
+  }
+}
