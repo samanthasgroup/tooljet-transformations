@@ -6,7 +6,9 @@
   "type": "module",
   "scripts": {
     "format": "prettier --write ./**/*.js",
+    "format-check": "prettier -c ./**/*.js",
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix",
+    "lint-check": "node ./node_modules/eslint/bin/eslint . --ext .js",
     "test": "jest"
   },
   "repository": {
