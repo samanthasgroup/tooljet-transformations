@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "format": "prettier --write ./**/*.js",
-    "format-check": "prettier -c ./**/*.js",
+    "format": "prettier --write ./src/**/*.js ./test/**/*.js",
+    "format-check": "prettier -c ./src/**/*.js ./test/**/*.js",
     "lint": "node ./node_modules/eslint/bin/eslint . --ext .js --fix",
-    "lint-check": "node ./node_modules/eslint/bin/eslint . --ext .js",
+    "lint-check": "node ./node_modules/eslint/bin/eslint . --max-warnings=0 --ext .js",
     "test": "jest"
   },
   "devDependencies": {
