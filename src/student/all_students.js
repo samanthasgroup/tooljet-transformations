@@ -29,20 +29,22 @@ const dayIndexToUIText = (index) =>
     "Воскресенье",
   ][index];
 
+const getHourFromTimestamp = (timestamp) => String(timestamp).split(":")[0];
+
 const availabilitySlotsToUIText = (slots) =>
   Array.from(slots)
     .map(
       (it) =>
-        `${dayIndexToUIText(it.day_of_week_index)} ${it.from_utc_hour}-${
-          it.to_utc_hour
-        }`
+        `${dayIndexToUIText(it.day_of_week_index)} ${getHourFromTimestamp(
+          it.from_utc_hour
+        )}-${getHourFromTimestamp(it.to_utc_hour)}`
     )
-    .join("\n");
+    .join("<br>");
 
 const languageLevelToUIText = (lls) =>
   Array.from(lls)
     .map((it) => `${it.language} ${it.level}`)
-    .join("\n");
+    .join("<br>");
 
 const transform = (data) => ({
   id: data.id,
