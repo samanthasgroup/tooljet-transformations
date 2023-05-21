@@ -18,28 +18,23 @@ const studentStatusToUIText = new Map([
   ["banned", "Выгнан из проекта"],
 ]);
 
-const dayIndexToUIText = (index) =>
-  [
-    "Понедельник",
-    "Вторник",
-    "Среда",
-    "Четверг",
-    "Пятница",
-    "Суббота",
-    "Воскресенье",
-  ][index];
-
 const getHourFromTimestamp = (timestamp) => String(timestamp).split(":")[0];
 
 const availabilitySlotsToUIText = (slots) =>
-  Array.from(slots)
-    .map(
-      (it) =>
-        `${dayIndexToUIText(it.day_of_week_index)} ${getHourFromTimestamp(
-          it.from_utc_hour
-        )}-${getHourFromTimestamp(it.to_utc_hour)}`
-    )
-    .join("<br>");
+  Array.from(slots).reduce((output, slot) => {
+    const key = slot.day_of_week_index;
+    const toFromString = `${getHourFromTimestamp(
+      slot.from_utc_hour
+    )} - ${getHourFromTimestamp(slot.to_utc_hour)}`;
+    /* eslint-disable no-param-reassign */
+    if (key in output) {
+      output[key] += `<br>${toFromString}`;
+    } else {
+      output[key] = toFromString;
+    }
+    /* eslint-enable no-param-reassign */
+    return output;
+  }, {});
 
 const languageLevelToUIText = (lls) =>
   Array.from(lls)
