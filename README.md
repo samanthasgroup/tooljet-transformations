@@ -1,1 +1,1 @@
-Note: some code will be repeated across different files. This is because Tooljet doesn't support sharing logic between transformations, meaning that each file has to be able to work properly by itself. I also don't see a pretty way to get this code into Tooljet, copy-paste seems like the only option.
+This repo contains the JS code used to transform data returned by the API into a human readable format.
