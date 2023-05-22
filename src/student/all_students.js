@@ -1,9 +1,8 @@
-const groupCommunicationLanguageToUIText = new Map([
-  ["ru", "RU"],
-  ["ua", "UA"],
-  ["ru_ua", "RU/UA"],
-  ["l2_only", "Изучаемый"],
-]);
+const {
+  availabilitySlotsToUIText,
+  groupCommunicationLanguageToUIText,
+  languageLevelToUIText,
+} = require("../shared/utils");
 
 const studentStatusToUIText = new Map([
   ["awaiting_offer", "Ожидает группу"],
@@ -18,30 +17,7 @@ const studentStatusToUIText = new Map([
   ["banned", "Выгнан из проекта"],
 ]);
 
-const getHourFromTimestamp = (timestamp) => String(timestamp).split(":")[0];
-
-const availabilitySlotsToUIText = (slots) =>
-  Array.from(slots).reduce((output, slot) => {
-    const key = slot.day_of_week_index;
-    const toFromString = `${getHourFromTimestamp(
-      slot.from_utc_hour
-    )} - ${getHourFromTimestamp(slot.to_utc_hour)}`;
-    /* eslint-disable no-param-reassign */
-    if (key in output) {
-      output[key] += `<br>${toFromString}`;
-    } else {
-      output[key] = toFromString;
-    }
-    /* eslint-enable no-param-reassign */
-    return output;
-  }, {});
-
-const languageLevelToUIText = (lls) =>
-  Array.from(lls)
-    .map((it) => `${it.language} ${it.level}`)
-    .join("<br>");
-
-const transform = (data) => ({
+const transformStudent = (data) => ({
   id: data.id,
   name: `${data.first_name} ${data.last_name}`,
   comment: data.comment,
@@ -61,7 +37,5 @@ const transform = (data) => ({
 });
 
 module.exports = {
-  availabilitySlotsToUIText,
-  languageLevelToUIText,
-  transform,
+  transformStudent,
 };

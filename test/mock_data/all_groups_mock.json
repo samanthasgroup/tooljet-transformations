@@ -1,0 +1,40 @@
+[
+    {
+        "id": 29,
+        "communication_language_mode": "ru",
+        "monday": "10:55:23",
+        "tuesday": null,
+        "wednesday": null,
+        "thursday": null,
+        "friday": "07:11:26",
+        "saturday": "18:39:48",
+        "sunday": null,
+        "language_and_level": {
+            "language": "Spanish",
+            "level": "A2"
+        },
+        "lesson_duration_in_minutes": 30,
+        "status": "working",
+        "start_date": "2023-05-18",
+        "end_date": "2023-06-08",
+        "telegram_chat_url": "http://www.zaiets.info/",
+        "coordinators": [
+            {
+                "id": 292,
+                "full_name": "Захар Гайворонський"
+            }
+        ],
+        "teachers": [
+            {
+                "id": 298,
+                "full_name": "Амалія Радченко"
+            },
+            {
+                "id": 299,
+                "full_name": "Емілія Гавришкевич"
+            }
+        ],
+        "students_count": 5,
+        "is_for_staff_only": true
+    }
+]

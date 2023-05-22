@@ -1,0 +1,176 @@
+[
+    {
+        "id": 41,
+        "first_name": "Адам",
+        "last_name": "Єременко",
+        "status": "awaiting_offer",
+        "communication_language_mode": "ua",
+        "utc_timedelta": "UTC+08:00",
+        "availability_slots": [
+            {
+                "day_of_week_index": 0,
+                "from_utc_hour": "05:00:00",
+                "to_utc_hour": "08:00:00"
+            },
+            {
+                "day_of_week_index": 1,
+                "from_utc_hour": "11:00:00",
+                "to_utc_hour": "14:00:00"
+            },
+            {
+                "day_of_week_index": 1,
+                "from_utc_hour": "17:00:00",
+                "to_utc_hour": "21:00:00"
+            },
+            {
+                "day_of_week_index": 2,
+                "from_utc_hour": "11:00:00",
+                "to_utc_hour": "14:00:00"
+            },
+            {
+                "day_of_week_index": 2,
+                "from_utc_hour": "14:00:00",
+                "to_utc_hour": "17:00:00"
+            },
+            {
+                "day_of_week_index": 3,
+                "from_utc_hour": "08:00:00",
+                "to_utc_hour": "11:00:00"
+            },
+            {
+                "day_of_week_index": 3,
+                "from_utc_hour": "17:00:00",
+                "to_utc_hour": "21:00:00"
+            },
+            {
+                "day_of_week_index": 4,
+                "from_utc_hour": "05:00:00",
+                "to_utc_hour": "08:00:00"
+            },
+            {
+                "day_of_week_index": 4,
+                "from_utc_hour": "08:00:00",
+                "to_utc_hour": "11:00:00"
+            },
+            {
+                "day_of_week_index": 5,
+                "from_utc_hour": "05:00:00",
+                "to_utc_hour": "08:00:00"
+            },
+            {
+                "day_of_week_index": 5,
+                "from_utc_hour": "08:00:00",
+                "to_utc_hour": "11:00:00"
+            },
+            {
+                "day_of_week_index": 5,
+                "from_utc_hour": "11:00:00",
+                "to_utc_hour": "14:00:00"
+            },
+            {
+                "day_of_week_index": 5,
+                "from_utc_hour": "17:00:00",
+                "to_utc_hour": "21:00:00"
+            },
+            {
+                "day_of_week_index": 6,
+                "from_utc_hour": "11:00:00",
+                "to_utc_hour": "14:00:00"
+            }
+        ],
+        "student_age_ranges": [
+            "13-17"
+        ],
+        "teaching_languages_and_levels": [
+            {
+                "language": "English",
+                "level": "B1"
+            },
+            {
+                "language": "French",
+                "level": "A1"
+            },
+            {
+                "language": "French",
+                "level": "A2"
+            },
+            {
+                "language": "German",
+                "level": "A0"
+            },
+            {
+                "language": "German",
+                "level": "A2"
+            },
+            {
+                "language": "Spanish",
+                "level": "A0"
+            },
+            {
+                "language": "Spanish",
+                "level": "A1"
+            },
+            {
+                "language": "Italian",
+                "level": "A0"
+            },
+            {
+                "language": "Italian",
+                "level": "A2"
+            },
+            {
+                "language": "Polish",
+                "level": "A0"
+            },
+            {
+                "language": "Polish",
+                "level": "A1"
+            },
+            {
+                "language": "Polish",
+                "level": "A2"
+            },
+            {
+                "language": "Czech",
+                "level": "A0"
+            },
+            {
+                "language": "Czech",
+                "level": "A1"
+            },
+            {
+                "language": "Czech",
+                "level": "A2"
+            },
+            {
+                "language": "Swedish",
+                "level": "A2"
+            }
+        ],
+        "simultaneous_groups": 3231,
+        "weekly_frequency_per_group": 428,
+        "can_host_speaking_club": false,
+        "non_teaching_help_provided_comment": "",
+        "non_teaching_help_provided": {
+            "cv_write_edit": false,
+            "cv_proofread": false,
+            "mock_interview": false,
+            "job_search": true,
+            "career_strategy": false,
+            "linkedin": false,
+            "career_switch": false,
+            "portfolio": false,
+            "uni_abroad": false,
+            "translate_docs": true
+        },
+        "peer_support": {
+            "can_check_syllabus": false,
+            "can_host_mentoring_sessions": false,
+            "can_give_feedback": false,
+            "can_help_with_childrens_groups": false,
+            "can_provide_materials": false,
+            "can_invite_to_class": true,
+            "can_work_in_tandem": true
+        }
+    }
+]
